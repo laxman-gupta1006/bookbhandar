@@ -1,0 +1,139 @@
+.your_books
+{
+    display: flex;
+    flex-direction: column;
+    /* height:250px; */
+    width: 250px;
+    /* max-width: 500px; */
+    margin: 10px;
+    box-shadow: 0px 0px 2px rgba(21, 21, 21, 0.525);
+    border-radius: 3px;
+}
+.bookcont
+{
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+    height:330px;
+    padding: 5px;
+    overflow: hidden;
+    border:none;
+    justify-content: space-between;
+}
+.bookimg{
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* flex-grpxow: 1; */
+}
+.bookdet
+{
+   display: flex;
+   flex-direction: column;
+}
+.boimg{
+    object-fit: cover;
+    width: 100%;
+}
+// .comment{
+//     display: flex;
+//     flex-direction: column;
+// }
+.text_send
+{
+    display: none;
+    flex-direction: row;
+}
+.msg{
+    border: none;
+    border-radius: 0px;
+}
+.sendbutton{
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.chat_container{
+    height: 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+    translate: 2s;
+}
+.chat_container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 2px;
+}
+
+.chat_container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.chatavatar{
+    border-radius: 50%;
+  }
+.comments{
+    display: flex;
+    flex-direction: column;
+}
+.chat_container::-webkit-scrollbar-thumb
+{
+    background-color: #474646;
+    border-radius: 2px;
+}
+.chat_msg{
+    padding: 10px;
+}
+.show_hide_char:hover{
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+.show_hide_char{
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 5px;
+    border: 1px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    width:100%;
+    height: 30px;
+    outline: none;
+}
+@media only screen and (max-width: 300px)
+{
+    .your_books
+    {
+        width: 100%;
+    }
+}
+.delete
+{
+    height: 100%;
+    width:50px;
+    border:none;
+}
+#waiting{
+    height: 30px;
+    width: 100%;
+    background:rgba(63, 240, 104, 0.367);
+    border:1px solid rgb(63, 240, 104);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+#unavailable{
+    height: 30px;
+    width: 100%;
+    background:rgba(240, 63, 63, 0.367);
+    border:1px solid rgb(240, 63, 63);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}

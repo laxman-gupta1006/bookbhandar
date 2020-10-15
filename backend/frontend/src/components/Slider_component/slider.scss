@@ -1,0 +1,20 @@
+
+#slider
+{
+    height: auto;
+    max-height: 500px;
+    width:100%;
+    overflow: hidden;
+    padding-top: 65px;
+}
+#carouselExampleIndicators{
+    height:100%;
+    z-index: +9;
+}
+/* .slider_img
+{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+} */

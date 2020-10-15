@@ -1,0 +1,116 @@
+#book
+{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#box
+{
+    box-shadow: 0px 0px 5px rgba(63, 63, 63, 0.644);
+    background: rgba(255,255, 255, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* width: 60%; */
+    width:auto;
+    padding: 20px;
+}
+#image
+{
+    height: 300px;
+    width:400px;
+}
+#book_img
+{
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+#book_details
+{
+    height: auto;
+    width: 100%;
+    background: rgba(255,255, 255, 0.8);
+}
+#add_book_details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.fields
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+label
+{
+    font-family: sans-serif;
+    font-kerning: inherit;
+    width: 150px;
+}
+input[type='text'],input[type='number']
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline :none;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    
+}
+input[type='text']:hover,input[type='number']:hover{
+    box-shadow: 0px 0px 5px lightblue;
+}
+fieldset
+{
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 5px;
+}
+textarea:hover{
+    box-shadow: 0px 0px 5px lightblue;
+}
+input[type='submit']
+{
+    height: 30px;
+    border: none;
+    background: #1DDDD8;
+    border-radius: 5px;
+    outline: none;
+}
+#add_book_details
+{
+    width: 100%;
+}
+@media only screen and (max-width: 768px)
+{
+    /* #book_img,#box
+    {
+        width: 90%;
+    } */
+    #book_details
+    {
+        width: 100%;
+    }
+    .fields
+    {
+        flex-direction: column;
+        justify-content: left;
+        width:100%;
+    }
+    #box{
+        width: 90%;
+    }
+}

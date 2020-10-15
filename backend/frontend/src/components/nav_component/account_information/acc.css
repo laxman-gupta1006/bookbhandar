@@ -1,0 +1,19 @@
+#loginb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 90px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=acc.css.map */

@@ -1,0 +1,21 @@
+#ProfileSection {
+  padding-top: 80px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContentProfile {
+  padding-top: 30px;
+  padding: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .ContentProfile {
+    width: 100vw;
+  }
+}

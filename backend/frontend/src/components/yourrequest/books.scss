@@ -1,0 +1,17 @@
+.contentbook
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 65px;
+}
+.content-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:auto;
+    background:white;
+}

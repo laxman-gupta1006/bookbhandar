@@ -1,0 +1,63 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+#buttons
+{
+    position: fixed;
+    top:100px;
+    right:0px;
+    display: flex;
+    flex-direction: column;
+}
+#buttons button{
+    height: 50px;
+    cursor: pointer;
+}
+#login{
+    margin-top: 5%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    height:70%;
+    width:100px;
+}
+
+
+
+
+
+
+
+/* .request_book
+{
+    height:100%;
+    width:100%;
+} */
+
+@media only screen and (max-width: 768px)
+{
+
+    #content
+    {
+        flex-direction: column;
+    }
+    /* #book_details
+    {
+        display: flex;
+        flex-direction: row;
+    } */
+}
+/* @media only screen and (max-width: 768px)
+{
+    .share_book
+    {
+        flex-direction: column;
+        width: 100%;
+        height:30vh;
+    }
+} */

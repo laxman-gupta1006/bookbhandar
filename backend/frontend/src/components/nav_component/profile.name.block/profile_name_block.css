@@ -1,0 +1,95 @@
+#profile_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#profile_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: '3vm';
+  margin-bottom: '0px';
+  cursor: pointer;
+  z-index: +20;
+}
+
+#profile_img {
+  margin-left: 5px;
+}
+
+#profile_log {
+  height: 180px;
+  width: 140px;
+  /* background:white; */
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* border:2px solid rgb(143, 133, 133) ; */
+  border-radius: 2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: +20;
+}
+
+#profile_log span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  border-radius: 5px;
+  height: 90px;
+  margin: 2px;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 0.5px solid grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+#ico {
+  height: 30px;
+  width: 30px;
+}
+
+#profileimage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  /* border: 0.5px solid grey; */
+}
+/*# sourceMappingURL=profile_name_block.css.map */
