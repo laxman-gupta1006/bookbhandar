@@ -33,9 +33,9 @@ urlpatterns += [
     path('signin/', index, name='index'),
     path('addbook/', index, name='index'),
      path('account/', index, name='index'),
-    # path('account/profile/', index, name='index'),
-    # path('account/yourbook/', index, name='index'),
-    # path('account/sentrequest/', index, name='index'),
+    path('account/profile/', index, name='index'),
+    path('account/yourbook/', index, name='index'),
+    path('account/sentrequest/', index, name='index'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,

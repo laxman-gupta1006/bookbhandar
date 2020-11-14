@@ -296,7 +296,7 @@ def send_email(request):
     'Varification Email',
     plain_message,
     settings.EMAIL_HOST_USER,
-    ['laxman.gupta1006@gmail.com',email],
+    [email],
     )
     email1.attach_alternative(html_message, "text/html")
     email1.send() 

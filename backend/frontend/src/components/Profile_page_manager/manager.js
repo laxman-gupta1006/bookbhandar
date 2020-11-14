@@ -5,7 +5,7 @@ import ReqBooks from '../yourrequest/books'
 import Navmenu from '../nav_component/nav_component';
 import UserDetails from '../user-details/userdetails';
 import './profilesection.css'
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Addbook from '../addbook/addbook';
 
 const ProfilePageManager = ()=> {
@@ -23,20 +23,29 @@ const ProfilePageManager = ()=> {
 
 }
   const handleItemClick = ( name ) => {
-    setProfile({ activeItem: name })
-    // window.location.href='/account/'+name+'/'
+    window.location.href='/account/'+name+'/'
   }
-  const profile_page = ()=> {
+  // const profile_page = ()=> {
   
-    if(profile.activeItem==='profile'){
-      return <UserDetails></UserDetails>
-    }
-    else if(profile.activeItem==='yourbook'){
-      return <Books></Books>
-    }else if(profile.activeItem==='sentrequest'){
-      return <ReqBooks></ReqBooks>
-    }}
-    // <BrowserRouter>
+  //   if(profile.activeItem==='profile'){
+  //     return <UserDetails></UserDetails>
+  //   }
+  //   else if(profile.activeItem==='yourbook'){
+  //     return <Books></Books>
+  //   }else if(profile.activeItem==='sentrequest'){
+  //     return <ReqBooks></ReqBooks>
+  //   }}
+    const profile_page = ()=> {
+      if(window.location.pathname==="/account/profile/"){
+        return <UserDetails></UserDetails>
+      }
+      else if(window.location.pathname==="/account/yourbook/"){
+        return <Books></Books>
+      }else if(window.location.pathname==="/account/sentrequest/"){
+        return <ReqBooks></ReqBooks>
+      }}
+    // return(<BrowserRouter>
+    // <Switch>
     // <Route exact path="/account/profile/">
     // <UserDetails></UserDetails>
     // </Route>
@@ -49,10 +58,9 @@ const ProfilePageManager = ()=> {
     // <Route exact path="/account/">
     // <UserDetails></UserDetails>
     // </Route>
+    // </Switch>
     // </BrowserRouter>)
-
-  
-
+    // }
     return (<>
       <Navmenu></Navmenu>
       <div id='ProfileSection'>
