@@ -8,6 +8,9 @@ catchall = TemplateView.as_view(template_name='index.html')
 def index(request):
     return render(request,'index.html')
 
+@login_required(login_url='/login')
+def login_index(request):
+    return render(request,'index.html')
 # def logout_view(request):
 #     logout(request)
 #     return redirect('/login')

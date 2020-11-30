@@ -37,11 +37,20 @@ const ProfilePageManager = ()=> {
   //   }}
     const profile_page = ()=> {
       if(window.location.pathname==="/account/profile/"){
+        if(profile.activeItem!='profile'){
+          setProfile({ activeItem: 'profile' })
+        }
         return <UserDetails></UserDetails>
       }
       else if(window.location.pathname==="/account/yourbook/"){
+        if(profile.activeItem!='yourbook'){
+          setProfile({ activeItem: 'yourbook' })
+        }
         return <Books></Books>
       }else if(window.location.pathname==="/account/sentrequest/"){
+        if(profile.activeItem!='sentrequest'){
+          setProfile({ activeItem: 'sentrequest' })
+        }
         return <ReqBooks></ReqBooks>
       }}
     // return(<BrowserRouter>

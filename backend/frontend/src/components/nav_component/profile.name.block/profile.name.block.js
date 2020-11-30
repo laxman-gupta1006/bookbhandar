@@ -38,7 +38,7 @@ const Profiled = () => {
       )
      
       const options = [
-        { key: 'user', text: 'Account', icon: 'user',onClick:()=> window.location.href='/account/' },
+        { key: 'user', text: 'Account', icon: 'user',onClick:()=> window.location.href='/account/profile' },
         { key: 'sign-out', text: 'Sign Out', icon: 'sign out' ,onClick: Logout },
       ]
     if (user.logged===true) {

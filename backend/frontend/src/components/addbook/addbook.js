@@ -39,10 +39,11 @@ const Addbook = () => {
     return (
       <div>
         <Button
-          content={state.open ? 'Add Book' : 'Close'}
+          content={state.open ? 'Close' : 'Add Book'}
           negative={state.open}
           positive={!state.open}
           onClick={()=>handleClick()}
+          color={"blue"}
         />
 
         <TransitionablePortal onClose={()=>handleClose()} open={state.open}>

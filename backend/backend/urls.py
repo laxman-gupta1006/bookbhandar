@@ -31,11 +31,11 @@ urlpatterns += [
     path('', index, name='index'),
     path('login/', index, name='index'),
     path('signin/', index, name='index'),
-    path('addbook/', index, name='index'),
-     path('account/', index, name='index'),
-    path('account/profile/', index, name='index'),
-    path('account/yourbook/', index, name='index'),
-    path('account/sentrequest/', index, name='index'),
+    path('addbook/', login_index, name='index'),
+     path('account/', login_index, name='index'),
+    path('account/profile/', login_index, name='index'),
+    path('account/yourbook/', login_index, name='index'),
+    path('account/sentrequest/', login_index, name='index'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
