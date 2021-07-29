@@ -1,2 +1,2 @@
 # BookBhandar_react
-Online book sharing plateform
+Online book sharing platform
